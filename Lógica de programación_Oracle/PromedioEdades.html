@@ -1,0 +1,24 @@
+<meta charset = "UTF UTF-8">
+
+<h1> PROGRAMA PARA CALCULAR EL PROMEDIO DE LAS EDADES </h1>
+
+<script>
+
+    var numeroMiembros = parseInt(prompt("Ingrese la cantidad de edades a promediar:"));    
+    var contador = 1;
+    var totalEdades = 0;
+    
+    while (contador <= numeroMiembros){
+
+        edad = parseInt(prompt("Ingrese la edad: "))
+        totalEdades += edad; 
+        contador += 1;
+
+    };
+
+    var promedio = totalEdades / numeroMiembros;
+    document.write("El promedio de las edades es: "+ promedio);
+        
+
+
+</script>

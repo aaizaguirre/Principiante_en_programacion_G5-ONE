@@ -1,0 +1,43 @@
+<meta charset = "UTF-8">
+
+<h1> PROGRAMA PARA CALCULAR EL IMC </h1>
+
+<script>
+
+    function calculoIMC(nombre, altura, peso) {
+
+        let nombre = prompt("Ingrese su nombre: "); 
+        let altura = prompt("Ingrese su altura: ");
+        let peso = prompt("Ingrese su peso: ");
+
+        IMC = peso / (altura * altura); 
+        document.write("El IMC de " + nombre + " es: " + IMC);
+        document.write("<br>");
+        document.write("<br>");
+
+    };
+ 
+    calculoIMC();
+
+    if (IMC <= 18.5) 
+    {
+        document.write("Su clasificación es INSUFICIENCIA PONDERAL" );
+        document.write("<br>");        
+    }
+    if (IMC > 18.5 && IMC < 25.0) 
+    {
+        document.write("Su clasificación es INTERVALO NORMAL" );
+        document.write("<br>");        
+    }  
+    if (IMC >= 25.0 && IMC < 30.0) 
+    {
+        document.write("Su clasificación es PREOBESIDAD" );
+        document.write("<br>");        
+    }
+    if (IMC >= 30.0) 
+    {
+        document.write("Su clasificación es OBESIDAD" );
+        document.write("<br>");        
+    };
+
+</script>

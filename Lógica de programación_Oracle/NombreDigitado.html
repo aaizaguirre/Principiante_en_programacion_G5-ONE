@@ -1,0 +1,26 @@
+<meta charset = "UTF - 8"
+
+<h1> Exhibiendo en un alert el nombre digitado. </h1>
+<br>
+<br>
+<br>
+
+<input/>
+<button> Mostrar lo escrito </button>
+
+<script>
+
+    var input = document.querySelector("input");
+
+    function mostrar(){
+
+        alert("La palabra escrita fue: " + input.value);
+        input.value = "";
+         input.focus();
+
+    };
+
+    var button = document.querySelector("button");
+    button.onclick = mostrar;
+
+</script>

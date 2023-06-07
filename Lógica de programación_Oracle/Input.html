@@ -1,0 +1,39 @@
+<meta charset = "UTF-8">
+
+<input/>
+<button> Verificar si acertó con el secreto. </button>
+
+<script>
+
+    var secreto = [1, 3, 5, 7, 9, 11, 13, 15];
+    var input = document.querySelector("input");
+    
+    /* Mantiene el foco del cursor en el input */
+    input.focus();
+
+    function verificar() {
+
+        for(var elemento = 0; elemento <= secreto.length; elemento += 1){
+            
+            if(parseInt(input.value) == secreto[elemento]) {
+
+                alert("Usted acertó.");
+                break;
+
+            } else {
+
+                alert("Usted erró.");
+                break;
+            };
+
+        };
+        /* Mantiene el valor del input en blanco */
+        input.value = "";
+        input.focus();
+
+    };
+        
+    var button = document.querySelector("button");
+    button.onclick = verificar;
+
+</script>

@@ -1,0 +1,79 @@
+<meta charset = "UTF-8">
+
+<!-- TITULO -->
+<h1> TITULO </h1>
+
+<!-- SALTO DE LINEA -->
+<br>
+
+<!-- LINK -->
+Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
+<br>
+
+<!-- Pop - up con JavaScript -->
+<script>
+
+    alert("Esto está hecho con JavaScript, un lenguaje de programación a diferencia de HTML.");
+
+   /* Escribir HTML en JavaScript */
+    document.write("Esto está en: ");
+    document.write("<br>");
+    document.write("HTML");
+    document.write("<br>");
+
+     /* Operaciones matemáticas */
+    document.write(90 + 10);
+    document.write("<br>");
+    document.write((90 + 10 + 20) / 3);
+    document.write("<br>");
+
+     /* Concatenación */
+    document.write("90" + "10");
+    document.write("<br>");
+    document.write("La suma de las edades de 3 amigos es: " + (20 + 15 + 17));
+    document.write("<br>");
+
+    /* Variables */
+    var year = 2023;
+    
+    document.write("El año es: " + (year));
+    document.write("<br>");
+    document.write("Dentro de 10 años, el año será: " + (year + 10));
+    document.write("<br>");
+
+    year = 2023 + 20;
+
+    document.write("Dentro de 20 años, el año será: " + year);
+    document.write("<br>");
+
+    var saltoLinea = "<br><br><br>"
+
+    document.write("Aquí hay 3 saltos de línea: ");
+    document.write(saltoLinea);
+    document.write("Fin.");
+
+    /* Funciones */
+    function saltarlinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        
+    };
+    
+    function imprimir(frase) {
+        
+        document.write(frase)
+
+    };
+
+    saltarlinea();
+    imprimir("Este texto fue impreso con ayuda de una función nueva llamada 'imprimir'. ");
+    saltarlinea();
+
+    /* Interacción con el usuario*/
+    var nombre = prompt("Ingrese su nombre: ") 
+    imprimir("Este script fue elaborado por: " + nombre);
+    saltarlinea();
+
+</script>

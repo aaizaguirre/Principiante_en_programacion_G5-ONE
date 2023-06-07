@@ -1,0 +1,36 @@
+<meta charset = "UTF-8">
+
+<h1> Cálculo de consumo de alcohol y gasolina </h1>
+
+<script>
+
+    while (true) 
+    {
+        let combustible = prompt('Ingrese el tipo de combustible: alcohol o gasolina')
+
+        if (combustible == 'gasolina') 
+        {
+            let gasolina = parseInt(prompt('Ingrese la cantidad de gasolina consumida (L): ')); 
+            let recorrido = parseInt(prompt('Ingrese el recorrido alcanzado con la gasolina (Km): '));
+            let eficiencia = gasolina / recorrido;       
+            document.write("La eficiencia del carro con gasolina es: " + eficiencia + " L/Km");
+            document.write("<br>");
+            break;
+        } 
+        if (combustible == 'alcohol')
+        {
+            let alcohol = parseInt(prompt('Ingrese la cantidad de alcohol consumido (L): '));
+            let recorrido = parseInt(prompt('Ingrese el recorrido alcanzado con el alcohol (Km): '));
+            let eficiencia = alcohol / recorrido;
+            document.write("La eficiencia del carro con gasolina es: " + eficiencia + " L/Km");
+            document.write("<br>");
+            break;
+        } else
+        {
+            alert('Tipo de combustible no válido.');
+        }
+    };
+        
+
+</script>
+
